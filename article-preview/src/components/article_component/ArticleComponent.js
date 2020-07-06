@@ -41,7 +41,7 @@ export default function ArticleComponent(props) {
           </AvatarShareContainer>
         </TextContainer>
         <ShareAreaContainer visible={props.shareVisibility}>
-          <p>S H A R E</p>
+          <p>SHARE</p>
           <SocialMediaIconContainer>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
