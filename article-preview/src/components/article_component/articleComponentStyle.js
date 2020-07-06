@@ -61,12 +61,13 @@ export const AvatarShareContainer = styled.div`
     justify-self: start;
     align-self: center;
   }
+
   div {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-content: center;
-
+    margin: -10px;
     grid-area: 1 / 2 / 2 / 5;
 
     h2 {
@@ -85,9 +86,16 @@ export const AvatarShareContainer = styled.div`
     }
   }
 
-  svg {
+  .svgHolder {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    background-color: hsl(210, 46%, 95%);
     grid-area: 1 / 5 / 2 / 6;
     justify-self: center;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
