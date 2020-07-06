@@ -100,4 +100,44 @@ export const AvatarShareContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+`
+
+export const ShareAreaContainer = styled.div`
+  position: absolute;
+  opacity: ${(props) => (props.visible === true ? 1 : 0)};
+  height: 55px;
+  width: 247px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 35%);
+  z-index: 1;
+  margin: 140px 0 0 530px;
+  padding: 0 30px 0 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+  p{
+      color: hsl(210, 46%, 95%);
+  }
+
+
+  :after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: hsl(217, 19%, 35%);
+	border-bottom: 0;
+	margin-left: -10px;
+	margin-bottom: -10px;
+}
 `;
+
+export const SocialMediaIconContainer = styled.div`
+`
