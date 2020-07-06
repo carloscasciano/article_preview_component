@@ -4,7 +4,7 @@ import ArticleComponent from "./components/article_component/ArticleComponent";
 import { dummyData } from "./resources/dummy_data";
 
 function App() {
-  const [shareVisibility, setShareVisibility] = useState(true);
+  const [shareVisibility, setShareVisibility] = useState(false);
 
   const handleShareVisibility = () => {
     shareVisibility === true

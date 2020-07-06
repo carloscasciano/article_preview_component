@@ -7,6 +7,10 @@ import {
   SocialMediaIconContainer,
 } from "./articleComponentStyle";
 
+const linkToFakeSocial = () => {
+  window.alert("Selected Social Media would open.");
+};
+
 export default function ArticleComponent(props) {
   return (
     <>
@@ -25,7 +29,11 @@ export default function ArticleComponent(props) {
             <div
               className="svgHolder"
               onClick={() => props.handleShareVisibility()}
-              style={{backgroundColor:props.shareVisibility?"#6E8098":"hsl(210, 46%, 95%)"}}
+              style={{
+                backgroundColor: props.shareVisibility
+                  ? "#6E8098"
+                  : "hsl(210, 46%, 95%)",
+              }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
@@ -42,7 +50,7 @@ export default function ArticleComponent(props) {
         </TextContainer>
         <ShareAreaContainer visible={props.shareVisibility}>
           <p>SHARE</p>
-          <SocialMediaIconContainer>
+          <SocialMediaIconContainer onClick={() => linkToFakeSocial()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
                 fill="#FFF"
@@ -50,7 +58,7 @@ export default function ArticleComponent(props) {
               />
             </svg>
           </SocialMediaIconContainer>
-          <SocialMediaIconContainer>
+          <SocialMediaIconContainer onClick={() => linkToFakeSocial()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
               <path
                 fill="#FFF"
@@ -58,7 +66,7 @@ export default function ArticleComponent(props) {
               />
             </svg>
           </SocialMediaIconContainer>
-          <SocialMediaIconContainer>
+          <SocialMediaIconContainer onClick={() => linkToFakeSocial()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
                 fill="#FFF"
