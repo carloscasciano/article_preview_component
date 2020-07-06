@@ -92,7 +92,7 @@ export const AvatarShareContainer = styled.div`
     height: 32px;
     width: 32px;
     border-radius: 16px;
-    background-color: hsl(210, 46%, 95%);
+    background-color: ${(props) => (props.customBackground === true ? 'red' : 'black')};
     grid-area: 1 / 5 / 2 / 6;
     justify-self: center;
     align-self: center;
@@ -111,7 +111,7 @@ export const ShareAreaContainer = styled.div`
   border-radius: 10px;
   background-color: hsl(217, 19%, 35%);
   z-index: 1;
-  margin: 140px 0 0 530px;
+  margin: 140px 0 0 528px;
   padding: 0 30px 0 30px;
 
   display: flex;
@@ -120,7 +120,7 @@ export const ShareAreaContainer = styled.div`
 
 
   p{
-      color: hsl(210, 46%, 95%);
+      color: hsl(212, 23%, 69%);
   }
 
 
