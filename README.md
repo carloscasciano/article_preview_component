@@ -1,7 +1,7 @@
 # Frontend Mentor - Article preview component Exercise
 
 Hi, this project is an exercise for [Frontend Mentor](https://www.frontendmentor.io).
-All done in React + Styled Components.
+Exercise made with React + Styled Components.
 
 The main goal was to create a responsive component based on a given design.
 You can fina more details here: https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT
@@ -9,6 +9,7 @@ You can fina more details here: https://www.frontendmentor.io/challenges/article
 Here are some sample gifs of the final product:
 
 ![Demo1](https://media.giphy.com/media/Tgm9yfe7Q3W6jpgNuy/giphy.gif)
+![Demo2](https://media.giphy.com/media/RhwipWIJph0b0sQAFe/giphy.gif)
 
 All briefing and directions are inside article-preview-component-master
 You can find the actual React files on article-preview folder.
