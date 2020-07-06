@@ -11,9 +11,11 @@ export const ArticleContainer = styled.div`
   box-shadow: 0px 10px 25px 0px rgba(109, 127, 151, 0.4);
 
   img {
-    height: auto;
-    width: 40%;
+    height: 100%;
+    width: 100%;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   @media (max-width: 375px) {
